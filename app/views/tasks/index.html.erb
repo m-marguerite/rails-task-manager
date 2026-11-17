@@ -1,0 +1,6 @@
+<ul>
+  <% @tasks.each do |t| %>
+    <%# link_to name_element.variable, prefixe_path(id_element) %>
+    <li><%= link_to t.title, task_path(t) %></li>
+  <% end %>
+</ul>
