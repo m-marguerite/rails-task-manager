@@ -6,13 +6,19 @@
     </div>
   </div>
 
-  <% if @task.completed %>
-    <i class="fa-regular fa-square-check"></i>
-    <p>This task is completed</p>
-  <% else %>
-    <i class="fa-regular fa-square"></i>
-    <p>This task is completed</p>
-  <% end %>
+  <div class="mt-4">
+    <% if @task.completed %>
+      <p>
+        <i class="fa-regular fa-square-check"></i>
+        This task is completed
+      </p>
+    <% else %>
+      <p>
+        <i class="fa-regular fa-square"></i>
+        This task is completed
+      </p>
+    <% end %>
+  </div>
 
   <hr>
 
